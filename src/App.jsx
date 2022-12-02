@@ -1,10 +1,10 @@
-import './App.css';
+import './App.scss';
 import Contato from './Components/Contato';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Produtos from './Components/Produtos';
 import Sobre from './Components/Sobre';
-import WppButton from './Components/Helper/wppButton'
+import WppButton from './Components/helper/WppButton'
 
 function App() {
   return (

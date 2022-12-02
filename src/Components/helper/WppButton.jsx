@@ -1,8 +1,7 @@
 import React from 'react';
-import './wppButton.css';
+import './WppButton.scss';
 
 import wppsvg from '../../Assets/wpp.svg'
-
 
 const wppButton = () => {
   return (

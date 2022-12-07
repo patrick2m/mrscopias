@@ -8,7 +8,7 @@ import img3 from '../Assets/carousel/carousel_home_3.jpg'
 
 export default function Sobre() {
   return (
-    <>
+    <div id='carousel-container'>
       <CarouselContainer
         img1={img1}
         img2={img2}
@@ -20,6 +20,6 @@ export default function Sobre() {
         desc2="No centro comercial da cidade, área de fácil acesso para você."
         desc3="Contamos com mais de 1000 produtos diferentes, para satisfazer o seu pedido."
       />
-    </>
+    </div>
   )
 }

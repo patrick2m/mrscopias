@@ -1,0 +1,61 @@
+.locais-container {
+  display: flex;
+  flex-direction: column;
+
+  .locais-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+
+    .locais-titulo{
+      width: 1000px;
+      font-size: 50px;
+      font-weight: 700;
+    }
+  }
+
+  .faculdades-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .faculdade {
+      position: relative;
+      width: 33.3%;
+      height: 50vh;
+      transition: ease-in-out .3s ;
+      overflow: hidden;
+
+      .titulo-faculdade{
+        position: absolute;
+        font-size: large;
+        font-weight: 700;
+        color:chartreuse;
+        z-index: 1;
+
+        display: none;
+      }
+
+      .subtitulo-faculdade {
+        position: absolute;
+        font-size: medium;
+        font-weight: 300;
+        color: cyan;
+        z-index: 1;
+
+        display: none;
+      }
+      
+      .faculdade-image {
+        position: absolute;
+        z-index: 0;
+        left: -20px;
+      }
+    }
+
+    .faculdade:hover {
+      width: 40%;
+    }
+  }
+}

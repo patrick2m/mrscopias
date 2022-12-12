@@ -30,7 +30,7 @@ const Header = () => {
   };
 
   function irParaElemento(scrollHeight) {
-    console.log(document.body.scrollTop, scrollHeight)
+    console.log(window.pageYOffset, scrollHeight)
   }
 
   return (
@@ -56,7 +56,7 @@ const Header = () => {
                 <a href="#locais" className='nav-item'>Locais</a>
                 <a href="#produtos" className='nav-item'>Produtos</a>
                 <a href="#contato" className='nav-item'>Contato</a>
-                <button onClick={irParaElemento(800)}>CLIQUE</button>
+                <button onClick={() => {irParaElemento(800)}}>CLIQUE</button>
               </div>
 
               <div className='nav-top-button-container'>

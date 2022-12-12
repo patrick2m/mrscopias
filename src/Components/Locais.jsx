@@ -7,7 +7,7 @@ import imgFamath from '../Assets/locais/famath.jpg';
 
 const Locais = () => {
   return (
-    <div className='locais-container'>
+    <div className='locais-container' id='locais'>
       <div className='locais-intro'>
         <h1 className='locais-titulo'>
           Texto Grande falando sobre a MRS estar espalhada garantindo seu atendimento com qualidade aos estudantes de niterói

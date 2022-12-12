@@ -3,7 +3,7 @@ import './Produtos.scss';
 
 const Produtos = () => {
   return (
-    <div>Produtos</div>
+    <div className='produtos-container' id='produtos'>Produtos</div>
   )
 }
 

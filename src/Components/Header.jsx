@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Header.scss';
 
 import imglogo from '../Assets/mrscopiaslogo.png';
 
 const Header = () => {
-  const [scrollY, setScrollY] = useState(0);
 
   function checkScrollForNavbar(scrollY) {
     const navbar = document.getElementById('header-nav');
@@ -23,13 +22,16 @@ const Header = () => {
     // de acordo com a altura da página
   }
 
-  window.addEventListener("scroll", () => {setScrollY(window.pageYOffset)});
+  window.addEventListener("scroll", () => { ScrollYValue(window.pageYOffset)});
 
-  useEffect(() => {
+  function ScrollYValue(scrollY) {
     checkScrollForNavbar(scrollY);
     checkScrollForNavbarMenu(scrollY);
-    
-  }, [scrollY]);
+  };
+
+  function irParaElemento(scrollHeight) {
+    console.log(document.body.scrollTop, scrollHeight)
+  }
 
   return (
     <div className='header-container' id='header'>
@@ -50,13 +52,15 @@ const Header = () => {
           <nav className='nav-menu'>
             <div className='nav-menu-div'>
               <div className='nav-menu-buttons'>
-                <a href=" " className='nav-item'>Início</a>
-                <a href=" " className='nav-item'>Produtos</a>
-                <a href=" " className='nav-item'>Contato</a>
+                <a href="#header" className='nav-item'>Início</a>
+                <a href="#locais" className='nav-item'>Locais</a>
+                <a href="#produtos" className='nav-item'>Produtos</a>
+                <a href="#contato" className='nav-item'>Contato</a>
+                <button onClick={irParaElemento(800)}>CLIQUE</button>
               </div>
 
               <div className='nav-top-button-container'>
-                <a href=" " className='nav-top-button'>
+                <a href="#header" className='nav-top-button'>
                   Voltar ao Topo
                 </a>
               </div>

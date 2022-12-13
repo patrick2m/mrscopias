@@ -30,7 +30,9 @@ const Header = () => {
   };
 
   function irParaElemento(scrollHeight) {
-    console.log(window.pageYOffset, scrollHeight)
+    console.log(window.pageYOffset, scrollHeight);
+    window.scroll(0, scrollHeight)
+    // window.pageYOffset = scrollHeight;
   }
 
   return (
@@ -52,17 +54,36 @@ const Header = () => {
           <nav className='nav-menu'>
             <div className='nav-menu-div'>
               <div className='nav-menu-buttons'>
-                <a href="#header" className='nav-item'>Início</a>
-                <a href="#locais" className='nav-item'>Locais</a>
-                <a href="#produtos" className='nav-item'>Produtos</a>
-                <a href="#contato" className='nav-item'>Contato</a>
-                <button onClick={() => {irParaElemento(800)}}>CLIQUE</button>
+                <button 
+                  onClick={() => {irParaElemento(0)}} 
+                  className='nav-item'
+                >
+                  Início
+                </button>
+                <button 
+                  onClick={() => {irParaElemento(820)}} 
+                  className='nav-item'
+                >
+                  Locais
+                </button>
+                <button 
+                  onClick={() => {irParaElemento(1530)}} 
+                  className='nav-item'
+                >
+                  Produtos
+                </button>
+                <button 
+                  onClick={() => {irParaElemento(1000)}} 
+                  className='nav-item'
+                >
+                  Contato
+                </button>
               </div>
 
               <div className='nav-top-button-container'>
-                <a href="#header" className='nav-top-button'>
+                <button  onClick={() => {irParaElemento(0)}} className='nav-top-button'>
                   Voltar ao Topo
-                </a>
+                </button>
               </div>
             </div>
           </nav>

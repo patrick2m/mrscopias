@@ -30,9 +30,7 @@ const Header = () => {
   };
 
   function irParaElemento(scrollHeight) {
-    console.log(window.pageYOffset, scrollHeight);
     window.scroll(0, scrollHeight)
-    // window.pageYOffset = scrollHeight;
   }
 
   return (

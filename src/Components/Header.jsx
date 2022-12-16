@@ -4,7 +4,8 @@ import './Header.scss';
 import imglogo from '../Assets/mrscopiaslogo.png';
 
 const Header = () => {
-
+  const componenteLocais = document.querySelector('#locais-container');
+ 
   function checkScrollForNavbar(scrollY) {
     const navbar = document.getElementById('header-nav');
     const carousel = document.getElementById('carousel-container');
@@ -21,6 +22,12 @@ const Header = () => {
     // Função que adiciona classe css que modifica cor do item no menu
     // de acordo com a altura da página
   }
+
+
+  // const alturaLocais = componenteLocais.offsetTop;
+
+  console.log(componenteLocais);
+ 
 
   window.addEventListener("scroll", () => { ScrollYValue(window.pageYOffset)});
 
@@ -59,7 +66,7 @@ const Header = () => {
                   Início
                 </button>
                 <button 
-                  onClick={() => {irParaElemento(820)}} 
+                  // onClick={() => {irParaElemento(alturaLocais)}} 
                   className='nav-item'
                 >
                   Locais

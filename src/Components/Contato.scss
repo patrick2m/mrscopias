@@ -1,3 +1,11 @@
 .contato-container {
-  height: 1500px;
+  height: 400px;
+  background-color: #fe4;
+
+  .contato-titulo {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 60px;
+    color: #252525;
+  }
 }

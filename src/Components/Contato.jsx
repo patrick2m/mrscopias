@@ -3,9 +3,8 @@ import './Contato.scss';
 
 const Contato = () => {
   return (
-    <div className='contato-container'>
-      Contato
-      
+    <div className='contato-container' id='contato-container'>
+      <h1 className='contato-titulo'>Contato</h1>
     </div>
   );
 }

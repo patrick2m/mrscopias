@@ -1,6 +1,8 @@
 .locais-container {
   display: flex;
   flex-direction: column;
+  background-color: #252525;
+
 
   .locais-intro {
     display: flex;
@@ -12,6 +14,7 @@
       width: 1000px;
       font-size: 50px;
       font-weight: 700;
+      color: #Fe4;
     }
   }
 
@@ -28,23 +31,25 @@
       overflow: hidden;
 
       .titulo-faculdade{
+        top: 15px;
+        left: 90px;
         position: absolute;
-        font-size: large;
+        font-size: 42px;
         font-weight: 700;
         color:chartreuse;
         z-index: 1;
-
-        display: none;
       }
 
       .subtitulo-faculdade {
         position: absolute;
         font-size: medium;
-        font-weight: 300;
-        color: cyan;
+        font-weight: 500;
+        color: black;
         z-index: 1;
-
-        display: none;
+        top: 400px;
+        transition: ease-in-out .3s ;
+        margin: 0 20px;
+        opacity: 0;
       }
       
       .faculdade-image {
@@ -52,6 +57,16 @@
         z-index: 0;
         left: -20px;
       }
+    }
+
+    .faculdade:hover .subtitulo-faculdade {
+      display: block;
+      top: 270px;
+      opacity: 100;
+    }
+
+    .faculdade:hover .faculdade-image {
+      opacity: 90%;
     }
 
     .faculdade:hover {

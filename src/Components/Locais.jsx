@@ -7,7 +7,7 @@ import imgFamath from '../Assets/locais/famath.jpg';
 
 const Locais = () => {
   return (
-    <div className='locais-container' id='locais'>
+    <div className='locais-container' id='locais-container'>
       <div className='locais-intro'>
         <h1 className='locais-titulo'>
           Texto Grande falando sobre a MRS estar espalhada garantindo seu atendimento com qualidade aos estudantes de niterói
@@ -34,7 +34,11 @@ const Locais = () => {
           <p className='subtitulo-faculdade'>
             Localizada na Anhanguera Niterói, próximo ao Terminal Rodoviário no Centro de niterói, a MRS Cópias oferece os serviços necessários aos alunos e professores desse instituto de ensino com 20 anos de experiência.
           </p>
-          <img src={imgAnhaguera} alt="Faculdade Anhanguera Niterói" />
+          <img 
+            src={imgAnhaguera} 
+            alt="Faculdade Anhanguera Niterói"
+            className='faculdade-image'
+          />
         </div>
         <div className='faculdade'>
           <h2 className='titulo-faculdade'>
@@ -43,7 +47,11 @@ const Locais = () => {
           <p className='subtitulo-faculdade'>
             Localizada em São Domingos, a faculdade Maria Thereza, instituição privada de ensino superior com 46 anos anos também possui sua loja da MRS Cópias.
           </p>
-          <img src={imgFamath} alt="Faculdade Famath Niterói" />
+          <img 
+            src={imgFamath} 
+            alt="Faculdade Famath Niterói"
+            className='faculdade-image'
+          />
         </div>
 
       </div>
